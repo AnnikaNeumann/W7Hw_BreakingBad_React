@@ -1,5 +1,5 @@
 import React from 'react';
-// import Characters from './component/Characters';
+import CharacterItem from './CharacterItem';
 
 
 const Characters = ({characters}) => {
@@ -9,21 +9,18 @@ const Characters = ({characters}) => {
     });
 
     return (
-        <div classname Character>
+        <div className = "Character">
             <ol>
-            <li>Character Name</li>
-            <li>Character Occupation</li>
-            <li>Character img</li>
-            <li>Character Portrayed</li>
-
-
-
+            <li>Name</li>
+            <li>Occupation</li>
+            <li>Portrayed By</li>
+            {characterItems}
             </ol>
         </div>
 
 
-    )
-}
+    );
+};
 
 export default Characters;
 

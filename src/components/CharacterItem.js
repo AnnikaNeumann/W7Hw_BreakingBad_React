@@ -3,25 +3,17 @@ import React from 'react';
 const CharacterItem = ({character}) =>{
 
 
-
-
-
-
-
-
     return(
         <>
         <ol>
-            <li>{character.name}</li>
+            <h1>Find your Meth Lab Partner</h1>
+            {/* <li>{character.name}</li> */}
             <li>{character.occupation}</li>
-            <li><img src = {character.img}></img></li>
             <li>{character.portrayed}</li>
         </ol>
         </>
-
-    )
-
-}
+    );
+};
 
 
 

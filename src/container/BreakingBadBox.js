@@ -1,9 +1,11 @@
 import React,{ useState, useEffect }  from 'react';
 import Characters from '../components/Characters';
+import CharacterItem from '../components/CharacterItem';
 
 const BreakingBadBox = () =>{
 
     const[characters, setCharacter] = useState([]);
+
 
     useEffect(() => {
         getCharacters();
@@ -11,16 +13,23 @@ const BreakingBadBox = () =>{
 })
 
 const getCharacters = function(){
-    fetch('https://https://www.breakingbadapi.com/api/characters.com/v2/all')
+    fetch('https://www.breakingbadapi.com/api/characters')
     .then(res => res.json())
-    // .then(character => console.log(character))
+    // .then(characters => console.log(characters))
     .then(characters => setCharacter(characters))
 }
+
+
+    return(
+
+        <div className="WalterBox">
+            {/* <CharacterItem characters={characters}/> */}
+
+        </div>
+
+    )
+
 }
-
-
-
-
 
 
 
