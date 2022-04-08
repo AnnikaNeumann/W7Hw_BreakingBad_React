@@ -10,12 +10,15 @@ const Characters = ({characters}) => {
 
     return (
         <div className = "Character">
-            <ol>
-            <li>Name</li>
-            <li>Occupation</li>
-            <li>Portrayed By</li>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Portrayed By</th>
+                    </tr>
             {characterItems}
-            </ol>
+           
+            </table>
         </div>
 
 

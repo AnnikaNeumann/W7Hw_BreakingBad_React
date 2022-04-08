@@ -6,7 +6,7 @@ function App() {
   return (
     <div className ="App">
 
-    <h1>Say My Name</h1>
+    <h1>Find your Meth Lab Partner</h1>
     <BreakingBadBox/>
     </div>
   );
