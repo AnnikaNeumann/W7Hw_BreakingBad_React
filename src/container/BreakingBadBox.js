@@ -1,6 +1,5 @@
 import React,{ useState, useEffect }  from 'react';
 import Characters from '../components/Characters';
-import CharacterItem from '../components/CharacterItem';
 
 const BreakingBadBox = () =>{
 
@@ -23,7 +22,7 @@ const getCharacters = function(){
     return(
 
         <div className="WalterBox">
-            {/* <CharacterItem characters={characters}/> */}
+            <Characters characters={characters}/>
 
         </div>
 
