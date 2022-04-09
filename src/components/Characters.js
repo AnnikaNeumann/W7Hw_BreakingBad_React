@@ -15,6 +15,8 @@ const Characters=({characters}) => {
                 <tr>
                     <th>Character</th>
                     <th>Occupation</th>
+                    <th>Nickname</th>
+                    <th>Photo</th>
                 </tr>
             {characterItems}
            

@@ -5,7 +5,7 @@ import BreakingBadBox from './container/BreakingBadBox';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
 
     <h1>Find your Meth Lab Partner</h1>
     <BreakingBadBox/>
