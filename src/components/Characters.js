@@ -11,7 +11,7 @@ const Characters=({characters, onCharacterClick}) => {
         return <CharacterItem character={character} key={index} onCharacterClick={onCharacterClick}/>
     });
 
-
+// returning a table with variable name characterItems with the array of all characters of that API we've mapped through
     return (
         <div className="Character">
             <table>
