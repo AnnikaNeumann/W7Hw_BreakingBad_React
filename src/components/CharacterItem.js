@@ -10,12 +10,12 @@ const CharacterItem = ({character, onCharacterClick}) =>{
 
 
     return(
-        
+            
         <tr>
             <td>{character.name}</td>
             <td>{character.occupation}</td>
             <td>{character.nickname}</td>
-            <td><img src={character.img} className="Photo" onClick={handleClick}></img><a href="https://www.imdb.com/title/tt0903747/?ref_=fn_al_tt_1">More cooking content</a></td>
+            <td><img src={character.img} className="Photo" onClick={handleClick}></img><a href="https://www.imdb.com/title/tt0903747/?ref_=fn_al_tt_1">Click for more cooking content</a></td>
 
         </tr>
         

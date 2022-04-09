@@ -1,22 +1,38 @@
 .App {
   text-align: center;
-  background: linear-gradient(to right, green, rgb(35, 110, 28), rgb(4, 46, 4));
+  background: linear-gradient(to right, rgb(43, 134, 43), rgb(13, 65, 9), rgb(7, 71, 7));
 }
 
 
 .Character th, td{
-
     border: 1px;
     border-color: black;
     border-style:groove;
     margin: 2px;
-
 }
 
 .Photo{
-
   width: 110px;
   height: 150px;
 }
 
+a:link{     
+  text-decoration: none;
+  color: black;
+}
 
+a:visited { 
+  text-decoration: none;
+  color: black; 
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: black;
+}
+
+a:active { 
+  text-decoration: none; 
+  color: black;
+
+}
