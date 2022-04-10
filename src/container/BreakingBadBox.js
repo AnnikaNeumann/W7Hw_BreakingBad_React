@@ -31,15 +31,13 @@ const BreakingBadBox = () =>{
 // returns the properties of JSX Element Characters
         return(
 
-            <div className="WalterBox">
+            <div>
                 <Characters characters={characters}/>
-                <img src='./BbLogo.png' alt='Breaking Bad Image'/>
             </div>
 
         )
     }
 }
-
 
 export default BreakingBadBox;
 

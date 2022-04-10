@@ -4,13 +4,22 @@
   /* background: linear-gradient(to right, rgb(43, 134, 43), rgb(13, 65, 9), rgb(7, 71, 7)); */
 }
 
-/* @font-face {
+@font-face {
   font-family: "Heart Breaking Bad";
-  /* src: local('Heart Breaking Bad'), url(.fonts/HeartBreakingBad-zGOw.tff); */
-/* } */
+  src: url('fonts/HeartBreakingBad-zG0w.ttf') format('truetype');
+}
+
 h1{
-  font-family: 'Righteous';}
-  
+  font-family: 'Heart Breaking Bad';
+  font-size: 80px;
+
+}
+
+.logoImage{
+  width: 10%;
+  height: 10%;
+}
+
 img{
   width: 100px;
   height: 50px;
@@ -62,4 +71,11 @@ a:active {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.characterName {
+  font-size: 20px;
+  text-align: center;
+
+
 }

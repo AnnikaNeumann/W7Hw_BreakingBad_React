@@ -1,4 +1,6 @@
 import React from 'react';
+import CharacterName from './CharacterName';
+import CharacterAttributes from './CharacterAttributes';
 // import CharacterDetail from './CharacterDetail';
 
 const CharacterItem = ({character, onCharacterClick}) =>{
@@ -12,18 +14,10 @@ const CharacterItem = ({character, onCharacterClick}) =>{
     let nameArray
     let firstName
     let lastName
+    let searchString
 
-    let searchString = "https://www.ecosia.org/search?q="+firstName+"%20"+lastName
-
-    if(character.occupation !== undefined){
-        if(character.occupation.length > 1){
-            occupation = `${character.occupation[0]}, ${character.occupation[1]}`
-        }
-        else{
-            occupation = character.occupation
-        }
-    }
-    // if statement for character portrayed to check if there is a portrayed character. then we split the string of names based on the spaces between each string.
+    
+    // if statement for character portrayed to check if there is a portrayed character. then we split the string based on any spaces.
     // firstName is always index 0 and because lastName can have multiples, we check the lengths and return index -1 to get the last index.
     // searchString then equals the ecosia search link where it comes back with the firstName plus space plus lastName (based on the character portrayed by)
 
@@ -46,9 +40,8 @@ const CharacterItem = ({character, onCharacterClick}) =>{
                 <p><img src={character.img} className="Photo"/><button onClick={handleClick}>
                     <a href={searchString}>Find out more about the actor</a></button>
                 </p>
-                <p>{character.name}</p>
-                <p>{occupation}</p>
-                <p>{character.nickname}</p>
+                <CharacterName characterName={character.name}/>
+                <CharacterAttributes occupation={character.occupation} status={character.status} nickName={character.nickname}/>    
             </div>
         );
     } 
