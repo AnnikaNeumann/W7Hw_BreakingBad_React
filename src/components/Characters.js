@@ -10,8 +10,7 @@ const Characters=({characters, onButtonClick}) => {
     const characterItems=characters.map((character, index) => {
         if(index >= 12){
             return
-        }
-            
+        }  
         return <CharacterItem character={character} key={index} onButtonClick={onButtonClick}/>
     });
 

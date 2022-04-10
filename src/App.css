@@ -17,10 +17,11 @@ h1{
 }
 
 .logoImage{
-  width: 10%;
+  width: 20%;
   height: 10%;
   margin: 30px;
   display: inline-block;
+  border-radius: 50%;
   
 }
 
@@ -91,8 +92,6 @@ a:active {
   border-color: black;
   font-family:'Courier New', Courier;
   font-size: 20px;
-
-
 
 }
 

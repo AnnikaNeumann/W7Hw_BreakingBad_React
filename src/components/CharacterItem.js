@@ -10,13 +10,12 @@ const CharacterItem = ({character, onCharacterClick}) =>{
         // console.log(`Clicked on ${character.img}`)
     }
      
-    let occupation
     let nameArray
     let firstName
     let lastName
     let searchString
 
-    
+    // Code I am proud of :)
     // if statement for character portrayed to check if there is a portrayed character. then we split the string based on any spaces.
     // firstName is always index 0 and because lastName can have multiples, we check the lengths and return index -1 to get the last index.
     // searchString then equals the ecosia search link where it comes back with the firstName plus space plus lastName (based on the character portrayed by)
