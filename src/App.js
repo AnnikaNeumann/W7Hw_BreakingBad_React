@@ -9,7 +9,7 @@ function App() {
     <div className="App" >
 
       <h1>Find your Meth Lab Partner</h1> 
-      <img className="logoImage" src={require("./images/BBlogo.jpeg")} alt='Breaking Bad Image'/>
+      <img className="logoImage" src={require("./images/walter.jpg")} alt='Breaking Bad Image'/>
 
       <BreakingBadBox/>
     </div>

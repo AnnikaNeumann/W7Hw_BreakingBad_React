@@ -2,6 +2,7 @@ import React,{ useState, useEffect }  from 'react';
 import Characters from '../components/Characters';
 // import from the next lower level which is Characters
 
+// creating main box to hold the API
 
 const BreakingBadBox = () =>{
 
@@ -22,9 +23,10 @@ const BreakingBadBox = () =>{
     .then(characters => setCharacter(characters))
     }
 
-    const onCharacterClick = function(character){
-    setSelectedCharacter(character);
-    }
+    // const onCharacterClick = function(character){
+    // setSelectedCharacter(character);
+    // }
+
     if(typeof characters !== 'object'){
         return  null
     }else{
@@ -43,4 +45,3 @@ export default BreakingBadBox;
 
 
 
-{/* /<CharacterItem characters={characters} onCharacterClick={onCharacterClick} /> */}

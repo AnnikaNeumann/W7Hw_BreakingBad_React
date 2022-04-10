@@ -1,7 +1,7 @@
 import React from 'react';
 import CharacterName from './CharacterName';
 import CharacterAttributes from './CharacterAttributes';
-// import CharacterDetail from './CharacterDetail';
+import CharacterPhoto from './CharacterPhoto';
 
 const CharacterItem = ({character, onCharacterClick}) =>{
 
@@ -28,6 +28,7 @@ const CharacterItem = ({character, onCharacterClick}) =>{
         searchString = "https://www.ecosia.org/search?q="+firstName+"%20"+lastName
     }
 
+    // if character equally to undefined then return null, else return div
     if (character === undefined)
     {
         return(
@@ -36,10 +37,10 @@ const CharacterItem = ({character, onCharacterClick}) =>{
     }
     else{
         return(
+            
             <div className="grid-item">
-                <p><img src={character.img} className="Photo"/><button onClick={handleClick}>
-                    <a href={searchString}>Find out more about the actor</a></button>
-                </p>
+                <CharacterPhoto characterImage={character.img}/>               
+                <button onClick={handleClick}><a href={searchString}>Find out more about the actor</a></button>
                 <CharacterName characterName={character.name}/>
                 <CharacterAttributes occupation={character.occupation} status={character.status} nickName={character.nickname}/>    
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// creating new component to handle the Character Name individually
 const CharacterName = ({characterName}) =>{
     return (
         <div className="characterName">
@@ -9,3 +10,5 @@ const CharacterName = ({characterName}) =>{
  }
 
 export default CharacterName;
+
+// 
