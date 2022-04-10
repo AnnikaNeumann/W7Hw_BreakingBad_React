@@ -8,6 +8,8 @@ import CharacterItem from './CharacterItem';
 const Characters=({characters, onCharacterClick}) => {
 
     const characterItems=characters.map((character, index) => {
+        if(index >= 12)
+            return
         return <CharacterItem character={character} key={index} onCharacterClick={onCharacterClick}/>
     });
 
@@ -21,17 +23,10 @@ const Characters=({characters, onCharacterClick}) => {
         } else{
 
         return (
-            <div className="Character">
-                <table>
-                    <tr>
-                        <th>Character</th>
-                        <th>Occupation</th>
-                        <th>Nickname</th>
-                        <th>Photo</th>
-                    </tr>
+            <div className="grid-container">
+                
                 {characterItems}
             
-                </table>
             </div>
         );
     }

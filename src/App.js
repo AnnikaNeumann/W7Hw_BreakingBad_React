@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App" >
 
-    <h1>Find your Meth Lab Partner</h1>
-    <BreakingBadBox/>
+      <h1>Find your Meth Lab Partner</h1>
+      <BreakingBadBox/>
     </div>
   );
 
