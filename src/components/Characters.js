@@ -8,12 +8,13 @@ import CharacterItem from './CharacterItem';
 const Characters=({characters, onCharacterClick}) => {
 
     const characterItems=characters.map((character, index) => {
-        if(index >= 12)
+        if(index >= 12){
             return
+        }
+            
         return <CharacterItem character={character} key={index} onCharacterClick={onCharacterClick}/>
     });
 
-// returning a table with variable name characterItems with the array of all characters of that API we've mapped through
     
     if (characters === undefined)
         {
@@ -21,6 +22,9 @@ const Characters=({characters, onCharacterClick}) => {
                 null
             )
         } else{
+
+            // returning a table with variable name characterItems with the array of all characters of that API we've mapped through
+
 
         return (
             <div className="grid-container">

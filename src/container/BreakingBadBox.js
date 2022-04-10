@@ -25,16 +25,19 @@ const BreakingBadBox = () =>{
     const onCharacterClick = function(character){
     setSelectedCharacter(character);
     }
-
+    if(typeof characters !== 'object'){
+        return  null
+    }else{
 // returns the properties of JSX Element Characters
-    return(
+        return(
 
-        <div className="WalterBox">
-            <Characters characters={characters}/>
-            <img src='./BbLogo.png' alt='Breaking Bad Image'/>
-        </div>
+            <div className="WalterBox">
+                <Characters characters={characters}/>
+                <img src='./BbLogo.png' alt='Breaking Bad Image'/>
+            </div>
 
-    )
+        )
+    }
 }
 
 
