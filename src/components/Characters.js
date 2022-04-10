@@ -12,22 +12,29 @@ const Characters=({characters, onCharacterClick}) => {
     });
 
 // returning a table with variable name characterItems with the array of all characters of that API we've mapped through
-    return (
-        <div className="Character">
-            <table>
-                <tr>
-                    <th>Character</th>
-                    <th>Occupation</th>
-                    <th>Nickname</th>
-                    <th>Photo</th>
-                </tr>
-            {characterItems}
-           
-            </table>
-        </div>
+    
+    if (characters === undefined)
+        {
+            return(
+                null
+            )
+        } else{
 
-
-    );
+        return (
+            <div className="Character">
+                <table>
+                    <tr>
+                        <th>Character</th>
+                        <th>Occupation</th>
+                        <th>Nickname</th>
+                        <th>Photo</th>
+                    </tr>
+                {characterItems}
+            
+                </table>
+            </div>
+        );
+    }
 };
 
 export default Characters;
