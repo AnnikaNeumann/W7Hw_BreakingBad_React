@@ -18,3 +18,14 @@ export default CharacterPhoto;
 
 
 
+// const CharacterPhoto = (props) =>{
+
+//     return(
+//         <div>
+//             <img src={props.characterImage} alt="Image of actor" className="img"/>
+//         </div>
+//     )
+// }
+
+
+// export default CharacterPhoto;

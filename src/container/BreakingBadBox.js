@@ -1,5 +1,6 @@
 import React,{ useState, useEffect }  from 'react';
 import Characters from '../components/Characters';
+import PlaySong from '../components/PlaySong';
 // import from the next lower level which is Characters
 
 // creating main box to hold the API
@@ -23,18 +24,17 @@ const BreakingBadBox = () =>{
     .then(characters => setCharacter(characters))
     }
 
-    // const onCharacterClick = function(character){
-    // setSelectedCharacter(character);
-    // }
 
     if(typeof characters !== 'object'){
         return  null
     }else{
+        
 // returns the properties of JSX Element Characters
         return(
 
             <div>
                 <Characters characters={characters}/>
+                <PlaySong/>
             </div>
 
         )

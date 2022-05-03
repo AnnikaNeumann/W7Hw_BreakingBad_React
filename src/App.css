@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(32, 133, 32);
+  background-color: rgb(25, 83, 25);
 }
 
 @font-face {
@@ -76,7 +76,7 @@ a:active {
 }
 
 .grid-item {
-  background-color: rgba(14, 122, 32, 0.8);
+  background-color: rgba(6, 98, 22, 0.8);
   border: 1.5px solid rgba(0, 0, 0, 0.8);
   padding: 8px;
   font-size: 30px;
